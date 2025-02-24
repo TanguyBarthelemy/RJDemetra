@@ -43,7 +43,7 @@ linters: lintr::all_linters(
         assignment_linter = NULL,
         vector_logic_linter = NULL,
         return_linter = NULL,
-        object_overwrite_linter = NULL,
+        object_overwrite_linter = NULL,make
         condition_call_linter = NULL,
         unnecessary_nesting_linter = NULL
     )
