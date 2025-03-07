@@ -71,7 +71,8 @@ can either use the `x13()` function for the X-13ARIMA method or the
 `tramoseats()` function for the TRAMO-SEATS method.
 
 ``` r
-library(RJDemetra)
+library("RJDemetra")
+
 myseries <- ipi_c_eu[, "FR"]
 x13_model <- x13(myseries) # X-13ARIMA method
 ts_model <- tramoseats(myseries) # TRAMO-SEATS method

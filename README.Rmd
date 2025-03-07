@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   fig.align="center"
 )
-library(RJDemetra)
+library("RJDemetra")
 options(enable_print_style = FALSE)
 ```
 
@@ -65,7 +65,8 @@ If you have troubles with the installation, check the [installation manual](http
 To seasonally adjust a time series with a pre-defined specification you can either use the `x13()` function for the X-13ARIMA method or the `tramoseats()` function for the TRAMO-SEATS method.
 
 ```{r plot-example, eval = TRUE}
-library(RJDemetra)
+library("RJDemetra")
+
 myseries <- ipi_c_eu[, "FR"]
 x13_model <- x13(myseries) # X-13ARIMA method
 ts_model <- tramoseats(myseries) # TRAMO-SEATS method
